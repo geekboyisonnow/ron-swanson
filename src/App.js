@@ -52,7 +52,7 @@ class App extends Component {
       ron21
     ]
 
-    this.state.quotes = {
+    this.state = {
       quotes: []
     }
   }
@@ -67,17 +67,18 @@ class App extends Component {
       })
   }
 
-  _click = event => {}
+  _click = event => {
+// On Click Want to Refresh the Data
 
-  whichRon = () => {}
 
-const quoteButton = event => {
-  document.querySelector('get-quote')
-}
-const quoteOutput = event => {
-  document.querySelector('quote')
-}
-
+    axios
+      .get('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
+      .then(response => {
+        this.setState({
+          quotes: response.data
+        })
+      })
+  }
 
   render() {
     return (
@@ -88,7 +89,7 @@ const quoteOutput = event => {
         <body>
           <img src={ron1} className="ronnie" alt="Ron-Swanson-Image" />
           <p id="quote">{this.state.quotes}</p>
-          <button id='get-quote' value="1" oncClick={this._click}>
+          <button id="get-quote" value="1" oncClick={this._click}>
             Click for Swagger
           </button>
         </body>
