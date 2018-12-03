@@ -23,6 +23,7 @@ import ron19 from './images/ron19.jpg'
 import ron20 from './images/ron20.jpg'
 import ron21 from './images/ron21.jpg'
 import axios from 'axios'
+import lover from './images/ron-swanson-meat-lover.png'
 
 class App extends Component {
   constructor(props) {
