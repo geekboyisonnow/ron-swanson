@@ -23,7 +23,7 @@ import ron19 from './images/ron19.jpg'
 import ron20 from './images/ron20.jpg'
 import ron21 from './images/ron21.jpg'
 import axios from 'axios'
-import lover from './images/ron-swanson-meat-lover.png'
+import meat from './images/meat-outline-filled.png'
 
 class App extends Component {
   constructor(props) {
@@ -89,7 +89,7 @@ class App extends Component {
         <header className="App-header">
           <h1>Swansonisms</h1>
         </header>
-        <div>
+        <div id="border">
           <img
             src={this.state.image}
             className="ronnie"
@@ -97,11 +97,11 @@ class App extends Component {
           />
           <p id="quote">{this.state.quotes}</p>
           <button id="get-quote" value="1" onClick={this._click}>
-            Click for Swagger
+            Press Your Luck!
           </button>
         </div>
         <footer>
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={meat} className="App-logo" alt="logo" />
         </footer>
       </div>
     )

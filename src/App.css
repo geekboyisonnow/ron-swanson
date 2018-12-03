@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 3s linear;
   height: 10vmin;
 }
 
@@ -28,10 +28,18 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
+  margin: 0 75px;
 }
 
 footer {
   background-color: #282c34;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 8px;
+  border-radius: 12px;
+  margin: 15px;
 }
 
 .App-link {
@@ -48,7 +56,8 @@ footer {
 }
 
 .ronnie {
-  width: 400px;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
