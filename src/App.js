@@ -87,7 +87,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Swansonisms</h1>
+          <h1>
+            Swans
+            <img src={meat} className="App-logo" alt="logo" />
+            nisms
+          </h1>
         </header>
         <div id="border">
           <img
@@ -97,12 +101,10 @@ class App extends Component {
           />
           <p id="quote">{this.state.quotes}</p>
           <button id="get-quote" value="1" onClick={this._click}>
-            Press Your Luck!
+            Vote for Swanson!
           </button>
         </div>
-        <footer>
-          <img src={meat} className="App-logo" alt="logo" />
-        </footer>
+        <footer />
       </div>
     )
   }
