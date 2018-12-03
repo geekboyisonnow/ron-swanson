@@ -9,14 +9,14 @@
 
 .App-header {
   background-color: #282c34;
-  max-height: 100px;
+  max-height: 80px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 0;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 body {
@@ -63,13 +63,12 @@ button:hover {
 }
 
 .ronnie {
-  max-width: 400px;
+  max-width: 300px;
   max-height: 500px;
-  min-width: 400px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 370px) and (max-device-width: 480px) {
   /* Styles */
 }
 
