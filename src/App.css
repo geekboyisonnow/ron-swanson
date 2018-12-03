@@ -30,6 +30,9 @@ body {
   color: white;
   text-align: center;
   margin: 0 75px;
+  max-width: 400px;
+  max-height: 500px;
+  min-width: 400px;
 }
 
 footer {
@@ -63,9 +66,6 @@ button:hover {
 }
 
 .ronnie {
-  max-width: 400px;
-  max-height: 500px;
-  min-width: 400px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
