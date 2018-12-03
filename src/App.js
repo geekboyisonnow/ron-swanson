@@ -28,7 +28,7 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.ron = [
+    this.rons = [
       ron1,
       ron2,
       ron3,
@@ -53,7 +53,8 @@ class App extends Component {
     ]
 
     this.state = {
-      quotes: []
+      quotes: [],
+      image: ron1
     }
   }
 
@@ -68,14 +69,15 @@ class App extends Component {
   }
 
   _click = event => {
-// On Click Want to Refresh the Data
-
-
+    // On Click Want to Refresh the Data
     axios
       .get('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
       .then(response => {
+        let randomIndex = Math.floor(this.rons.length * Math.random())
+
         this.setState({
-          quotes: response.data
+          quotes: response.data,
+          image: this.rons[randomIndex]
         })
       })
   }
@@ -86,13 +88,17 @@ class App extends Component {
         <header className="App-header">
           <h1>Swansonisms</h1>
         </header>
-        <body>
-          <img src={ron1} className="ronnie" alt="Ron-Swanson-Image" />
+        <div>
+          <img
+            src={this.state.image}
+            className="ronnie"
+            alt="Ron-Swanson-Image"
+          />
           <p id="quote">{this.state.quotes}</p>
-          <button id="get-quote" value="1" oncClick={this._click}>
+          <button id="get-quote" value="1" onClick={this._click}>
             Click for Swagger
           </button>
-        </body>
+        </div>
         <footer>
           <img src={logo} className="App-logo" alt="logo" />
         </footer>
