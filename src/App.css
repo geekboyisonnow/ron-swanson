@@ -66,11 +66,16 @@ button:hover {
 }
 
 .ronnie {
+  max-width: 400px;
+  max-height: 500px;
+  min-width: 400px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
+  min-width: 300px;
+  max-width: 450px;
 }
 
 /* Smartphones (landscape) ----------- */
@@ -80,6 +85,9 @@ button:hover {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
+  body {
+    max-width: 300px;
+  }
   /* Styles */
 }
 
