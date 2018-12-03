@@ -51,5 +51,14 @@ footer {
   width: 400px;
 }
 
-@media {
+@media screen and (max-width: 992px) {
+  body {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 400px;
+  }
 }
