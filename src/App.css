@@ -71,8 +71,6 @@ button:hover {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  min-width: 300px;
-  max-width: 450px;
 }
 
 /* Smartphones (landscape) ----------- */
@@ -83,7 +81,6 @@ button:hover {
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   body {
-    max-width: 300px;
   }
   /* Styles */
 }
